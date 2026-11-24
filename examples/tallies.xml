@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tallies>
+  <mesh id="1">
+    <dimension>4 4</dimension>
+    <lower_left>-10.0 -10.0</lower_left>
+    <upper_right>10.0 10.0</upper_right>
+  </mesh>
+  <filter id="1" type="cell">
+    <bins>1 2 3</bins>
+  </filter>
+  <filter id="2" type="energy">
+    <bins>0.0 0.625 20000.0 20000000.0</bins>
+  </filter>
+  <filter id="3" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <tally id="1" name="fuel reaction rates">
+    <filters>1 2</filters>
+    <nuclides>U235 U238 total</nuclides>
+    <scores>fission absorption nu-fission</scores>
+  </tally>
+  <tally id="2" name="flux map">
+    <filters>3</filters>
+    <scores>flux</scores>
+  </tally>
+</tallies>
