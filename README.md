@@ -16,7 +16,7 @@ sudo apt install python3 python3-tk git
 ```
 
 ```bash
-git clone https://github.com/<your-user>/openmc-output-viewer.git
+git clone https://github.com/ElieMweze/openmc-output-viewer.git
 ```
 
 ```bash
